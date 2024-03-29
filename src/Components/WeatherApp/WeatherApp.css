@@ -1,10 +1,10 @@
 .container{
     
-    width: 90%; /* Genişlik ekran genişliğinin %90'ı olacak şekilde ayarlandı */
+    width: 100%; /* Genişlik ekran genişliğinin %90'ı olacak şekilde ayarlandı */
     max-width: 607px; /* Maksimum genişlik belirli bir değere sınırlı */
     height: auto; /* Yükseklik otomatik olarak ayarlanacak */
     margin: auto;
-    margin-top: 75px;
+    margin-top: 0px;
     border-radius: 12px;
     background: linear-gradient(180deg, #3eac9f 0%, #41f471 100%);
     
@@ -13,33 +13,49 @@
 .top-bar{
     display: flex;
     justify-content: center;
-    gap: 14px;
-    padding-top: 60px;
+    gap: 3px;
+    padding-top: 40px;
 
 }
-.top-bar input{
+.top-bar input {
     display: flex;
-    width: 90%; /* Genişlik ekran genişliğinin %90'ı olacak şekilde ayarlandı */
-    max-width: 362px; /* Maksimum genişlik belirli bir değere sınırlı */
-    height: auto; /* Yükseklik otomatik olarak ayarlanacak */
+    width: 90%;
+    max-width: 362px;
+    height: auto;
     background: #ebfffc;
     border: none;   
     outline: none;
-    border-radius: 40px;
-    padding-left: 5%; /* Sol iç boşluğu yüzde olarak ayarlandı */
-    padding-right: 5%; /* Sağ iç boşluğu yüzde olarak ayarlandı */
+    border-radius: 75px;
+    padding-left: 5%;
+    padding-right: 5%;
     color: #626262;
-    font-size: 2vw; /* Font büyüklüğü ekran genişliğine göre ayarlanacak */
-    font-weight: 400;
+    font-size: 2vw; /* Varsayılan font boyutu */
+    font-weight: 400; /* Varsayılan font ağırlığı */
 
+}
+
+/* Küçük ekranlar için */
+@media only screen and (max-width: 768px) {
+    .top-bar input {
+        font-size: 4vw; /* Küçük ekranlarda font boyutunu azalt */
+        font-weight: 300; /* Küçük ekranlarda font ağırlığını azalt */
+    }
+}
+
+/* Daha küçük ekranlar için */
+@media only screen and (max-width: 480px) {
+    .top-bar input {
+        font-size: 6vw; /* Daha küçük ekranlarda font boyutunu daha da azalt */
+        font-weight: 400; /* Daha küçük ekranlarda font ağırlığını daha da azalt */
+    }
 }
 .search-icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 78px;  
-    height: 78px;
-    background: #ebfffc;
+    width: 56px;  
+    height: 56px;
+    background: #06ebaa;
     border-radius: 40px;
     cursor: pointer;
 }
@@ -52,15 +68,15 @@
     display: flex;
     justify-content: center;
     color: white; 
-   font-size: 120px;
+   font-size: 80px;
    font-weight: 400;
 }
 .weather-location{
     display: flex;
     justify-content: center;
     color: white; 
-   font-size: 60px;
-   font-weight: 400;
+   font-size: 40px;
+   font-weight: 300;
 }
 .data-container{
     margin-top: 50px;
@@ -76,7 +92,7 @@ align-items: flex-start;
 gap: 12px;
 }
 .data{
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 400;
 
 }
