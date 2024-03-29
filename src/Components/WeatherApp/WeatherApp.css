@@ -1,10 +1,13 @@
 .container{
-    width:607px;
-    height: 829px;
+    
+    width: 90%; /* Genişlik ekran genişliğinin %90'ı olacak şekilde ayarlandı */
+    max-width: 607px; /* Maksimum genişlik belirli bir değere sınırlı */
+    height: auto; /* Yükseklik otomatik olarak ayarlanacak */
     margin: auto;
-    margin-top:75px;
+    margin-top: 75px;
     border-radius: 12px;
-    background: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+    background: linear-gradient(180deg, #3eac9f 0%, #41f471 100%);
+    
 }
 
 .top-bar{
@@ -16,16 +19,18 @@
 }
 .top-bar input{
     display: flex;
-    width: 362px;
-    height: 78px;
+    width: 90%; /* Genişlik ekran genişliğinin %90'ı olacak şekilde ayarlandı */
+    max-width: 362px; /* Maksimum genişlik belirli bir değere sınırlı */
+    height: auto; /* Yükseklik otomatik olarak ayarlanacak */
     background: #ebfffc;
     border: none;   
     outline: none;
     border-radius: 40px;
-    padding-left:40px ;
-    color:#626262;
-    font-size:20px;
-   font-weight: 400;
+    padding-left: 5%; /* Sol iç boşluğu yüzde olarak ayarlandı */
+    padding-right: 5%; /* Sağ iç boşluğu yüzde olarak ayarlandı */
+    color: #626262;
+    font-size: 2vw; /* Font büyüklüğü ekran genişliğine göre ayarlanacak */
+    font-weight: 400;
 
 }
 .search-icon{
